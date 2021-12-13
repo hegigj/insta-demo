@@ -41,7 +41,7 @@ export class AppComponent {
       disabled: false,
       suggestions: [
         {
-          image: 'https://instagram.ftia4-1.fna.fbcdn.net/v/t51.2885-19/s150x150/64926809_2088360047958811_4070903499322294272_n.jpg?_nc_ht=instagram.ftia4-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=Jzu9hP8orU4AX_DI4uf&edm=ABfd0MgBAAAA&ccb=7-4&oh=45071d4ac32f0f32b8ccc6d7c9e57269&oe=61B98E67&_nc_sid=7bff83',
+          image: 'https://media.istockphoto.com/photos/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-picture-id1279460648',
           username: 'filani',
           description: 'New to insta'
         },

@@ -11,7 +11,10 @@
     </div>
     <div class="align-vertical">
       <ng-container>
-        <app-post></app-post>
+        <app-post *ngFor="let post of users[0].suggestions"
+                       [username]="suggestion.username">
+          
+        </app-post>
       </ng-container>
     </div>
   </div>

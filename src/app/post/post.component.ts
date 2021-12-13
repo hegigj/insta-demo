@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Input, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
+  @Input()
+  username?: string;
+  @Input()
+  description?: string;
+  @Input()
+  likesCount?: 1;
+
+  @Input()
+  comments?: number
+
   constructor() { }
 
-  ngOnInit(): void {
+  
+  ngOnDestroy(): void {
+
   }
 
 }
