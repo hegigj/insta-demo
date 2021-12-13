@@ -1,0 +1,25 @@
+.outer-container {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.has-story {
+    background-color: tomato;
+  }
+
+  .inner-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    img {
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+    }
+  }
+}

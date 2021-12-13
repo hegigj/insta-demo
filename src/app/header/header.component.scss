@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: tomato;
+
+  .page-section {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+
+    &.align-start {
+      justify-content: flex-start;
+    }
+
+    &.align-center {
+      justify-content: center;
+    }
+
+    &.align-end {
+      justify-content: flex-end;
+    }
+  }
+}
