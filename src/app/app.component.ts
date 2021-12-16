@@ -42,31 +42,56 @@ export class AppComponent {
       suggestions: [
         {
           image: 'https://media.istockphoto.com/photos/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-picture-id1279460648',
-          username: 'filani',
+          username: 'Marsiona',
           description: 'New to insta'
         },
         {
           image: 'https://media.istockphoto.com/photos/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-picture-id1279460648',
-          username: 'filani',
+          username: 'Regi',
           description: 'New to insta'
         },
         {
           image: 'https://media.istockphoto.com/photos/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-picture-id1279460648',
-          username: 'filani',
+          username: 'Kristela',
+          description: 'New to insta'
+        }
+      ]
+    },
+
+    {
+      image: 'https://media.istockphoto.com/photos/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-picture-id1279460648',
+      username: 'Marsi',
+      followers: 10,
+      following: 11,
+      disabled: false,
+      suggestions: [
+
+        {
+          image: 'https://media.istockphoto.com/photos/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-picture-id1279460648',
+          username: 'Regi',
+          description: 'New to insta'
+        },
+        {
+          image: 'https://media.istockphoto.com/photos/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-picture-id1279460648',
+          username: 'Kristela',
           description: 'New to insta'
         }
       ]
     }
+
   ];
+
+
+
 
   posts: Post[] = [
     {
       user: this.users[0],
       image: 'https://media.istockphoto.com/photos/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-picture-id1279460648',
-      description: 'Awesome Post',
+      description: 'Summer 2021...',
       likes: [...this.users],
-      likesCount: 1,
-      comments: 1
+      likesCount: 255,
+      comments: 6
     }
   ];
 

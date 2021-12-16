@@ -1,4 +1,5 @@
-import { Input, Component, OnInit } from '@angular/core';
+import { Input, Component, Output, EventEmitter, OnInit } from '@angular/core';
+import { UserData } from '../app.component';
 
 @Component({
   selector: 'app-post',
@@ -6,21 +7,36 @@ import { Input, Component, OnInit } from '@angular/core';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent implements OnInit {
-
   @Input()
   username?: string;
-  @Input()
+
+  @Input('photo')
+  src?: string;
+
+  @Input('caption')
   description?: string;
-  @Input()
-  likesCount?: 1;
 
-  @Input()
-  comments?: number
+  @Input('comment')
+  comments?: number;
 
-  constructor() { }
+  @Input('likes')
+  likesCount?: number;
 
-  
+
+  @Input('likedby')
+  likes?: string;
+
+  @Input('count')
+  count?: number;
+
+  constructor() {
+  }
+
+  ngOnInit(): void {
+  }
+
   ngOnDestroy(): void {
+
 
   }
 

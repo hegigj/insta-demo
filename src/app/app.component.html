@@ -1,20 +1,27 @@
 <app-header [username]="users[0].username"
             (search)="log($event)"></app-header>
 <div class="page-container">
+
   <div class="page-content">
+
     <div class="align-horizontal">
+
       <ng-container *ngFor="let story of users">
         <app-stories [photo]="story.image"
-                     [hasStory]="false"
+                     [hasStory]="true"
                      [size]="140"></app-stories>
+
       </ng-container>
     </div>
+
     <div class="align-vertical">
       <ng-container>
-        <app-post *ngFor="let post of users[0].suggestions"
-                       [username]="suggestion.username">
-          
-        </app-post>
+        <app-post [username]="users[0].username"
+                  [photo]="posts[0].image"
+                  [caption]="posts[0].description"
+                  [likes]="posts[0].likesCount"
+                  [comment]="posts[0].comments"
+                  [likedby]="users[1].username"></app-post>
       </ng-container>
     </div>
   </div>

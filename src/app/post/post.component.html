@@ -1,3 +1,21 @@
-<ng-content ></ng-content>
-<p>hi {{username}}</p> 
+<div class="head">
+  <span>{{username}}</span>
+</div>
+<div class="picture">
+  <img [src]="src">
+</div>
 
+<div class="action">
+  <span class="material-icons">favorite</span>
+  <span class="material-icons">mode_comment</span>
+</div>
+<div>
+  <span>{{description}}</span>
+</div>
+<div>
+  liked by: {{likes}}
+  <span>and {{likesCount}} others</span>
+</div>
+<div>
+  <span> {{comments}} comments</span>
+</div>
