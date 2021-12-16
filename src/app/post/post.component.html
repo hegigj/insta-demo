@@ -1,1 +1,19 @@
-<p>post works!</p>
+<div class="outer-container">
+  <div class="inner-container">
+    <p class="name left">{{ username }}</p>
+    <img class="img left" [src]="src">
+    <div class="action">
+      <span class="material-icons left btn">favorite</span>
+      <span class="material-icons left btn">mode_comment</span>
+    </div>
+    <div class="left others">
+      {{description}}
+    </div>
+    <div class="left others">
+      likes: {{likesCount}}
+    </div>
+    <div class="left others">
+      Comments: {{comments}}
+    </div>
+  </div>
+</div>

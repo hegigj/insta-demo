@@ -1,8 +1,10 @@
 <div class="outer-container"
-     [style]="getSize()"
+      [ngStyle]="getSize()"
      [ngClass]="{'has-story': hasStory}">
   <div class="inner-container"
-       [style]="getSize(true)">
+       [ngStyle]="getSize(true)">
     <img [src]="src">
   </div>
 </div>
+
+

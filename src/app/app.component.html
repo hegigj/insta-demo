@@ -11,7 +11,12 @@
     </div>
     <div class="align-vertical">
       <ng-container>
-        <app-post></app-post>
+        <app-post [username]="users[0].username"
+                  [photo]="posts[0].image"
+                  [description]="posts[0].description"
+                  [comment]="posts[0].comments"
+                  [likes]="posts[0].likesCount"
+                  ></app-post>
       </ng-container>
     </div>
   </div>

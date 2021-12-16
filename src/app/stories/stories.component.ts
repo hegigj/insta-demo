@@ -23,10 +23,11 @@ export class StoriesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getSize(inner: boolean = false): Record<'width' | 'height', string> {
+  getSize(inner: boolean = false): Record<any, any> {
     if (inner) {
       this.size -= this.size * .05;
     }
+
 
     const size: string = this.size + 'px';
 
